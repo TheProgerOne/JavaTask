@@ -16,10 +16,10 @@ public class GreatCircle {
 
     public static void main(String[] args) {
         double x1,y1,x2,y2;
-        x1=Integer.parseInt(args[0]);
-        y1=Integer.parseInt(args[1]);
-        x2=Integer.parseInt(args[2]);
-        y2=Integer.parseInt(args[3]);
+        x1=Double.parseDouble(args[0]);
+        y1=Double.parseDouble(args[1]);
+        x2=Double.parseDouble(args[2]);
+        y2=Double.parseDouble(args[3]);
         x1=Math.toRadians(x1);
         x2=Math.toRadians(x2);
         y1=Math.toRadians(y1);
