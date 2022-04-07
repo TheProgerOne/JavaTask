@@ -15,17 +15,17 @@
 public class CMYKtoRGB {
 
     public static void main(String[] args) {
-       double cyan, magenta, yellow, black;
-       cyan= Integer.parseInt(args[0]);
-      magenta=Integer.parseInt(args[1]);
-      yellow=Integer.parseInt(args[2]);
-      black=Integer.parseInt(args[3]);
-       double white=1-black;
-       double red= 255*white*(1-cyan);
-       double green=255*white*(1-magenta);
-       double blue=255*white*(1-yellow);
-        System.out.println("red   = "+(int)red);
-        System.out.println("green = "+(int)green);
-        System.out.println("blue  = "+(int)blue);
+        double cyan, magenta, yellow, black;
+        cyan= Double.parseDouble(args[0]);
+        magenta=Double.parseDouble(args[1]);
+        yellow=Double.parseDouble(args[2]);
+        black=Double.parseDouble(args[3]);
+        double white=1-black;
+        double red= 255*white*(1-cyan);
+        double green=255*white*(1-magenta);
+        double blue=255*white*(1-yellow);
+        System.out.println("red   = "+Math.round(red));
+        System.out.println("green = "+Math.round(green));
+        System.out.println("blue  = "+Math.round(blue));
     }
 }
