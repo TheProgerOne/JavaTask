@@ -10,14 +10,15 @@ import java.lang.Math;
 public class RightTriangle {
 
     public static void main(String[] args) {
-	    int a,b,c;
+	   int a,b,c;
         a=Integer.parseInt(args[0]);
         b=Integer.parseInt(args[1]);
-        c=Integer.parseInt(args[3]);
+        c=Integer.parseInt(args[2]);
         boolean isItRightTriangle;
-        isItRightTriangle= a>0 & b>0 & c>0 & Math.pow(c,2)==Math.pow(a,2)+Math.pow(b,2);
+        isItRightTriangle= a>0 & b>0 & c>0 && (Math.pow(c,2)==Math.pow(a,2)+Math.pow(b,2) ||  
+					       Math.pow(a,2)==Math.pow(c,2)+Math.pow(b,2) || 
+					       Math.pow(b,2)==Math.pow(a,2)+Math.pow(c,2)) ;
         System.out.println(isItRightTriangle);
-
 
     }
 }
