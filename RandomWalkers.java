@@ -7,7 +7,7 @@ import java.lang.Math;
 public class RandomWalkers {
     public static void main(String[] args) {
         int r = Integer.parseInt(args[0]);
-        double trials =  Integer.parseInt(args[1]);
+        double trials =  Double.parseInt(args[1]);
         double random;
         double sum=0;
         for (int t = 0; t < trials; t++) {
